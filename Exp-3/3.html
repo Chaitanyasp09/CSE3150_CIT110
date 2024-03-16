@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap">
+</head>
+<body>
+
+
+    <header>
+        <img src="https://marriottnews.brightspotcdn.com/3f/2a/fc8d818eba7a06b610ed20455cf9/sheraton-full-lockup-1.png" style="max-width: 25%; max-height: 25%;">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <center><h1>Hotel Sheraton</h1>
+            <p>AT THE HEART OF COMMUNITIES FOR OVER 80 YEARS<br>
+            Bringing people together is what we’ve done since opening our first Sheraton in 1937. Now we’re deeply rooted in over 400 communities across the globe. We are proud to act as a point of connection for millions of travelers, many just like you.</p></center>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Menu</h2>
+
+            <h3>Starters</h3>
+            <div class="menu-item">
+                <h4>Gopi Manchurian</h4>
+                <p>Spicy cauliflower florets deep-fried and tossed in a tangy sauce.</p>
+                <p>Rs: 110</p>
+                <button class="add-to-cart" onclick="addToCart('Gopi Manchurian', 110)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h4>Baby Corn Manchurian</h4>
+                <p>Baby corn coated in a crispy batter, deep-fried, and served with a spicy sauce.</p>
+                <p>Rs: 130</p>
+                <button class="add-to-cart" onclick="addToCart('Baby Corn Manchurian', 130)">Add to Cart</button>
+            </div>
+
+            <h3>Curry Section</h3>
+            <div class="menu-item">
+                <h4>Paneer Butter Masala</h4>
+                <p>Soft cottage cheese cubes cooked in a creamy tomato-based gravy.</p>
+                <p>Rs: 200</p>
+                <button class="add-to-cart" onclick="addToCart('Paneer Butter Masala', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h4>Kaju Kadi</h4>
+                <p>Cashew nuts cooked in a rich and flavorful curry.</p>
+                <p>Rs: 220</p>
+                <button class="add-to-cart" onclick="addToCart('Kaju Kadi', 220)">Add to Cart</button>
+            </div>
+
+            <h3>Indian Breads</h3>
+            <div class="menu-item">
+                <h4>Butter Roti</h4>
+                <p>Soft Indian bread cooked with butter.</p>
+                <p>Rs: 60</p>
+                <button class="add-to-cart" onclick="addToCart('Butter Roti', 60)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h4>Kulcha</h4>
+                <p>Leavened bread made from refined flour, typically served with curries.</p>
+                <p>Rs: 65</p>
+                <button class="add-to-cart" onclick="addToCart('Kulchi', 65)">Add to Cart</button>
+            </div>
+
+            <h3>Basmati Rice</h3>
+            <div class="menu-item">
+                <h4>Biryani Veg</h4>
+                <p>Flavorful rice dish cooked with assorted vegetables and spices.</p>
+                <p>Rs: 210</p>
+                <button class="add-to-cart" onclick="addToCart('Biryani Veg', 210)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h4>Fried Rice Veg</h4>
+                <p>Vegetable fried rice prepared with aromatic Basmati rice.</p>
+                <p>Rs: 130</p>
+                <button class="add-to-cart" onclick="addToCart('Fried Rice Veg', 130)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+<br><br><br>
+    <section id="cart">
+        <div class="container">
+            <h2 style="text-align: center;">Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div id="menu-item" style="text-align: center;">
+                <p>Total: <span id="total-price">0.00</span></p>
+                <button class="add-to-cart" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+<br><br><br>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sheraton. All rights reserved.</p>
+        </div>
+    </footer><br><br><br>
+
+    <script src="script.js"></script>
+</body>
+</html>

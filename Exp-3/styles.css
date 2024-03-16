@@ -1,0 +1,88 @@
+body {
+    font-family: 'Rubik', Arial, sans-serif; /* Use Rubik font as primary, fallback to Arial and sans-serif */
+    margin: 0;
+    padding: 0;
+}
+#about {
+    padding: 55px 0;
+    font-size: 25px; /* Increase font size */
+    
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: center; /* Center align text */
+    background-color: #F2EFE5; /* Add a light background color */
+    color: #12372A; /* Change text color */
+}
+
+header {
+    background-color: #12372A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.menu-item {
+    display: inline-block;
+    width: 45%; /* Adjust as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+section#menu {
+    text-align: center; /* Center the menu section */
+}
+.menu-item h3 {
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #436850;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.menu-item button.add-to-cart:hover {
+    background-color: #ADBC9F;
+    color: #fff;
+}
+
+footer {
+    background-color: #12372A;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
