@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num = prompt("Enter the number of terms: \n");
+        if (num !== null && num > 0) {
+            document.write("<h1>The first " + num + " numbers in the Fibonacci series:</h1>");
+            document.write("<p>");
+            var fib1 = 0, fib2 = 1;
+            for (var i = 1; i <= num; i++) {
+                document.write(fib1 + "<br>");
+                var nextFib = fib1 + fib2;
+                fib1 = fib2;
+                fib2 = nextFib;
+            }
+            document.write("</p>");
+        } else {
+            document.write("<p>Invalid input!</p>");
+        }
+    </script>
+</body>
+</html>

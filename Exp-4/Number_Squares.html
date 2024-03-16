@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Number Squares</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num = prompt("Enter a number: \n");
+        if (num !== null && num > 0) {
+            document.write("<h1>Squares of numbers up to " + num + ":</h1>");
+            document.write("<p>");
+            for (var i = 1; i <= num; i++) {
+                document.write("Square of " + i + " is: " + (i * i) + "<br>");
+            }
+            document.write("</p>");
+        } else {
+            document.write("<p>Invalid input!</p>");
+        }
+    </script>
+</body>
+</html>
